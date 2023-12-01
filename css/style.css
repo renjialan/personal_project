@@ -74,7 +74,7 @@ body.active {
     
     .heading span {
     font-size: var(--p-font);
-    color: var(--main-color);
+    
     }
     header {
     position: fixed;
@@ -274,6 +274,7 @@ color: var(--hover);
         display: flex;
         align-items: center;
         margin-bottom: 1.4rem;
+        color: #293030;
         }
         .information .info-box .bx {
         font-size: 22px;
