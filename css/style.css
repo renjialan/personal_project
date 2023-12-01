@@ -45,6 +45,8 @@
 body.active {
   --text-color: #e4d8a4;
   --bg-color: #2e343a;
+  --shadow-color: rgba(255, 255, 255, 0.2); /* Example: Lighter shadow for dark mode */
+    --hover: rgba(255, 255, 255, 0.4); /* Adjust as needed */
   }
   body {
   background: var(--bg-color);
@@ -91,9 +93,7 @@ body.active {
     }
 
 
-    header.shadow {
-    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
-    }
+  
     .logo {
     font-size: 1rem;
     font-weight: 600;
@@ -124,6 +124,8 @@ body.active {
   display: block;
   color: var(--text-color);
 }
+
+
 /* // */
 
 /* signature pricture */
@@ -214,7 +216,7 @@ color: var(--hover);
     .home {
       position: relative;
       width: 100%;
-      min-height: 150vh;
+      min-height: 98vh;
       display: grid;
       grid-template-columns: 0.5fr 1fr 1fr ;
       align-items: center;
@@ -248,9 +250,9 @@ color: var(--hover);
       }
 
       .about-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        
         margin-top: 2rem;
         }
         
@@ -262,9 +264,11 @@ color: var(--hover);
         font-size: var(--p-font);
         font-weight: 400;
         text-align: justify;
+        padding: 10%;
         }
         .information {
         margin: 1rem 0 1.4rem;
+        padding: 10%;
         }
         .information .info-box {
         display: flex;
@@ -449,8 +453,7 @@ color: var(--hover);
 
 #jump{
   position: absolute;
-  left: -500px;  
-  
+  left: -5000px;  
   z-index: 2;
   padding: 5px 10px; 
   color: black;
@@ -459,10 +462,10 @@ color: var(--hover);
 }
 
 #jump:focus { 
-  left: 50px;  
+  left: -500px;  
   position: absolute;
    
-  
+  top: 100px;
   z-index: 2000;
   padding: 5px 10px; 
   color: black;
@@ -487,6 +490,7 @@ color: var(--hover);
   font-size: 24px;
   cursor: pointer;
   z-index: 10001;
+  padding-left: 80%;
   display: block; /* Visible on mobile */
 }
 
@@ -534,7 +538,17 @@ color: var(--hover);
     border-radius: 15%;
     /* animation: float 5s infinite; */
   }
-
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    }
+    
+    .about-img img {
+    width: 80%;
+    border-radius: 0.5rem;
+    }
 
   header {
     position: fixed;
@@ -551,9 +565,7 @@ color: var(--hover);
     box-shadow: -3px -3px 7px var(--shadow-color),
                   2px 2px 5px var(--hover);
     }
-    header.shadow {
-    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
-    }
+   
   .navbar {
     display: flex;
     }
