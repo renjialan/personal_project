@@ -149,8 +149,7 @@ body.active {
 
     
 #darkmode {
-font-size: 22px;
-cursor: pointer;
+display: none;
 }
 
 .social {
@@ -587,6 +586,7 @@ color: var(--hover);
     #darkmode {
     font-size: 22px;
     cursor: pointer;
+    display: flex;
 
     }
 
@@ -634,8 +634,8 @@ color: var(--hover);
       /* Adjust the dark mode icon style if needed */
       font-size: 22px; 
       position: relative;
-      top: 0.7rem;
-      right: -20px;
+      top: -30px;
+    left: 200px;
       vertical-align: middle;
   }
 
