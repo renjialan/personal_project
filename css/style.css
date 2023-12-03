@@ -348,7 +348,7 @@ color: var(--hover);
         .portfolio-content {
         display: grid;
         padding: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
         gap: 1rem;
         margin-top: 2rem;
         }
@@ -635,8 +635,8 @@ color: var(--hover);
       /* Adjust the dark mode icon style if needed */
       font-size: 22px; 
       position: relative;
-      top: -30px;
-    left: 200px;
+      top: 10px;
+   
       vertical-align: middle;
   }
 
