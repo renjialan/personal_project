@@ -348,7 +348,7 @@ color: var(--hover);
         .portfolio-content {
         display: grid;
         padding: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(230px, auto));
         gap: 1rem;
         margin-top: 2rem;
         }
